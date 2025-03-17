@@ -11,4 +11,9 @@ class UsersController < ApplicationController
     @user.save
     redirect_to "/"
   end
+
+  def show
+    @user = User.find_by({"id" => params["id"]})
+  end
+
 end

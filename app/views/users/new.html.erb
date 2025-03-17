@@ -1,17 +1,19 @@
 <h1>New User Account</h1>
 
 <form action="/users" method="post">
-  <p>
-    <label for="username">Username</label>
-    <input type="text" name="username" id="username">
-  </p>
-  <p>
-    <label for="email">Email</label>
-    <input type="text" name="email" id="email">
-  </p>
-  <p>
-    <label for="password">Password</label>
-    <input type="text" name="password" id="password">
-  </p>
-  <button>Signup</button>
+  <div class="mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" class="form-control" name="username" id="username">
+  </div>
+
+  <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="text" class="form-control" name="email" id="email">
+  </div>
+
+  <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" name="password" id="password">
+  </div>
+  <button class="btn btn-primary">Signup</button>
 </form>
